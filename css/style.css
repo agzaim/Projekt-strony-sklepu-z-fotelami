@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway-light.woff') format('woff'),       url('../fonts/raleway-light.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway-bold.woff') format('woff'),       url('../fonts/raleway-bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+* {
+    box-sizing: border-box;
+    font-family: "Raleway", Arial, sans-serif;
+}
+
+
+container {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+
+
+
+
