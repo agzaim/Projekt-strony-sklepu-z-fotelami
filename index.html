@@ -6,41 +6,59 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="container">
-        <p>
+    <header>
+        <div class="container">
+        <p class="left-header header-element">
             sit <span class="bold-text color-text">on</span> chair
         </p>
-        <nav>
-            <p>kontakt</p>
-            <p>galeria</p>
-            <p>o firmie</p>
+        <nav class="header-element">
+            <p class="navigation_button">
+                <a href="#">kontakt</a>
+            </p>
+            <p class="navigation_button">
+                <a href="#">galeria</a>
+            </p>
+            <p class="navigation_button">
+                <a href="#">o firmie</a>
+            </p>
         </nav>
+        </div>
+        <div class="clearfix"></div>
     </header>
-    <section class="container section1">
-        <p>&lt;</p>
-        <img src="images/black_chair.png" width="xx" height="xx"/>
-        <article>
-        <h1>
-            sit <span class="bold-text color-text">on</span> our <span class="bold-text color-text">chair</span>
-        </h1>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut auctor diam. In non mi blandit, gravida mauris vitae, commodo sem. 
-        </p>
-        <div class="button"><a>Learn more</a></div>
-        <p>&gt;</p>
-        </article>
+    <section class="section1">
+        <div class="container section1-container">
+            <p class="slider-arrow arrow1">&lt;</p>
+            <img class="black-chair" src="images/black_chair.png"/>
+            <article class="text-box">
+                <h1>
+                    sit <span class="bold-text color-text">on</span> our <span class="bold-text color-text">chair</span>
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut auctor diam. In non mi blandit, gravida mauris vitae, commodo sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit ut auctor diam. In non mi bla.
+                </p>
+                <div class="button"><a href="#">zobacz więcej</a></div>
+            </article>
+            <p class="slider-arrow arrow2">&gt;</p>
+        </div>
     </section>
     <section class="container section2">
         <div class="box1">
-            <div class="opacity-bar">chair <span class="bold-text">clair</span></div>
+            <div class="opacity-bar">
+                Chair <span class="uppercase">clair</span>
+                <div class="short-color-bar"></div>
+            </div>
         </div>
         <div class="box2">
-            <div class="opacity-bar">chair <span class="bold-text">margarita</span></div>
+            <div class="opacity-bar">
+                Chair <span class="uppercase">margarita</span>
+                <div class="short-color-bar"></div>
+            </div>
         </div>
         <div class="box3">
-            <p>
+            <p class="bold-text">
                 Finds all inputs
             </p>
+            <div class="short-color-bar"></div>
             <p>
                 Finds all inputs that are not checked and hightlights the next sibling span. Notice there eis no chance when clicking the checkboxes since no click events have been linked. 
             </p>
@@ -105,6 +123,7 @@
         </form>
     </section>
     <footer>
+        <div class="container">
         <div>
             Copyright 2014 | All Rights Reserved. - Sit On Chair
         </div>
@@ -116,6 +135,7 @@
             <a href="frvfgmngfg" target="_blank"><img src="images/flickr.png"/></a>
             <a href="frvfgggmngfg" target="_blank"><img src="images/pinterest.png"/></a>
             <a href="frvfgmngfg" target="_blank"><img src="images/twitter.png"/></a>
+        </div>
         </div>
     </footer>
 </body>
