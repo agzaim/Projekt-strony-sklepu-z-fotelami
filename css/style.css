@@ -44,7 +44,7 @@ header {
 }
 
 
-.left-header {
+.logo-header {
     float: left;
     text-transform: uppercase; 
 }
@@ -95,24 +95,19 @@ header {
 
 .arrow1 {
     left: 0;
-    top: 65px;
+    top: 105px;
 }
 
 
 .arrow2 {
     right: 0;
-    top: 65px;
-}
-
-
-img {
-    display: inline-block;
+    top: 105px;
 }
 
 
 .black-chair {
     display: inline-block;
-    margin-left: 15px;
+    margin-left: -38px;
 }
 
 
@@ -120,8 +115,8 @@ img {
     display: inline-block;
     width: 35%;
     position: absolute;
-    bottom: 98px;
-    right: 160px;
+    bottom: 93px;
+    right: 105px;
 }
 
 
@@ -148,7 +143,7 @@ h1 {
     line-height: 35px;
     background-color: #24ba9f;
     border-radius: 10px; 
-    margin-left: 82px;
+    margin-left: 47px;
     margin-top: 25px;
     text-transform: uppercase;
 }
@@ -220,29 +215,53 @@ h1 {
 
 .short-color-bar {
     height: 6px;
-    width: 106px;
+    width: 114px;
     background-color: #28c9ab;
 }
 
 
 .section3 {
-    background-color: #F1F1F1;
+    background-color: #F1F1F1; 
+}
+
+
+h2 {
+    font-weight: normal;
+    font-size: 18px;
+    text-transform: uppercase; 
+    margin-top: 26px;
+}
+
+
+.long-color-bar { 
+    height: 6px;
+    width: 240px;
+    background-color: #21b89c;
+    margin-bottom: 60px;
+    margin-top: -10px;
 }
 
 
 .plan-box {
     width: 250px;
     height: 369px;
-    border: 1px solid #d1d0d8;
-    display: inline-block;
+    border: 2px solid #d1d0d8;
     position: relative;
     text-align: center;
     background-color: #F9F9F9;
     z-index: 1;
+    float: left;
+    margin-right: 19px;
+    margin-bottom: 48px;
 }
 
 
-.section3 .plan-box:nth-child(2) {
+.last-plan-box {
+    margin-right: 0;
+}
+
+
+div.plan-box:nth-child(2) {
     background-color: #27c7ab;
 }
 
@@ -252,7 +271,7 @@ h1 {
     width: 40px;
     border-radius: 50%;
     position: absolute;
-    border: 1px solid #d1d0d8;
+    border: 2px solid #d1d0d8;
     left: 101px;
     top: -29px;
     background-color: #FFF;
@@ -283,20 +302,26 @@ h1 {
 .price-circle { 
     width: 87px;
     height: 87px;
-    border: 1px solid #d1d0d8;
+    border: 2px solid #d1d0d8;
     border-radius: 50%;
-    text-align: center;
-    margin-left: 84px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 23px;
     margin-bottom: 23px;
     background-color: #FFF;
-    color: #000000;
+    color: #BEBEBE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    font-weight: bold;
 }
 
 
 .price-circle span {
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 34px;
+    /*font-weight: bold; */
 }
 
 
@@ -335,12 +360,75 @@ h1 {
 }
 
 
+input {
+    display: block;
+    border: 1px solid #27c7ab;
+    height: 44px;
+    width: 468px;
+    margin-bottom: 19px;
+    font-size: 25px;
+    padding-left: 12px;
+    font-weight: normal;
+}
 
 
+.placeholder {
+    color: #A1A1A1;
+}
 
 
+textarea {
+    resize: none;
+    display: block;
+    border: 1px solid #27c7ab;
+}
 
 
+.form-left {
+    float: left;
+}
+
+
+.form-right {
+    float: right;
+}
+/* .red-armchair {
+    
+}  */
+
+
+input[type="submit"] {
+    background-color: #23ba9d;
+    border-radius: 8px;
+    height: 52px;
+    width: 278px;
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+
+.copyrights {
+    float: left;
+    margin-top: 19px;
+    color: #A1A1A1;
+}
+
+
+.logo-footer {
+    float: right;
+    margin-top: 16px;
+    text-transform: uppercase;
+    margin-left: 43px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #A1A1A1;
+}
+
+
+.social-buttons {
+    float: right;
+    margin-bottom: 27px;
+}
 
 
 
