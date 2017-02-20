@@ -550,64 +550,127 @@ h2 {
 
 /*         FORM  SECTION          */
 
+.form .long-color-bar {
+    margin-bottom: 19px;
+}
+
 
 .form-left {
- 
-    display: inline-block;
-    width: 60%;
-    vertical-align: bottom;
+    width: 507px;
+    float: left;
+    
 }
 
 
 .form-right {
-    vertical-align: bottom;
-    position: relative;
-    display: inline-block;
-    border: 1px solid red;
-    width: 37%;
+    float: right;
+    
+    width: 251px;
 }
 
 
-input {
+.form-left input {
     display: block;
-    border: 1px solid #27c7ab;
+    border: 1px solid #6ae2ce;
     height: 44px;
-    width: 448px;
+    width: 484px;
     margin-bottom: 19px;
-    font-size: 25px;
+    font-size: 22px;
     padding-left: 12px;
+    color: #bfbfbf;
+    font-family: 'Raleway';
     font-weight: lighter;
 }
 
 
-.placeholder {
-    color: #A1A1A1;
+input[name="imie"] {
+    margin-top: 18px;
 }
+
+
+/* próbowałam po Bożemu ustawić rozmiar <textarea> za pomocą 'rows' i 'cols', ale przy zwiększeniu czcionki i ustawieniu paddingów wszystko się rozjechało, więc w trosce o własne zdrowie psychiczne ustawiam rozmiar w px */
 
 
 textarea {
     resize: none;
+    width: 484px;
+    height: 130px;
     display: block;
-    border: 1px solid #27c7ab;
+    border: 1px solid #6ae2ce;
+    font-family: 'Raleway';
+    font-weight: lighter;
+    font-size: 22px;
+    color: #bfbfbf;
+    padding-left: 9px;
+    padding-top: 9px;
+}
+
+/*
+ input[type="checkbox"]:checked {
+    background-image: url(../images/form_ok.jpg);
+    height: 30px;
+    width: 30px;
+    background-size: cover;
+    border: 1px solid #6ae2ce;
+}
+*/
+
+input[type="checkbox"] {
+    display: none;
+}
+ 
+
+input[type="checkbox"] + label {
+    height: 33px;
+    width: 33px;
+    border: 1px solid #6ae2ce;
+    display: inline-block;
+    margin-bottom: -4px;
+}
+
+
+input[type="checkbox"]:checked + label {
+    background-image: url(../images/form_ok.jpg);
+    height: 33px;
+    width: 33px;
+    background-size: 95% 85%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+
+.form-right p {
+    display: inline-block;
+    width: 84%;
+    font-size: 15px;
+    color: #bfbfbf;
+    line-height: 100%;
 }
 
 
 .red-armchair {
-    display: block;
-    padding-top: 0;
+    height: 154px;
+    width: 197px;
+    background-image: url(../images/red_chair.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px 0px 19px 10px;
 }  
 
 
 input[type="submit"] {
     background-color: #23ba9d;
-    border-radius: 8px;
+    border-radius: 7px;
     height: 52px;
-    width: 278px;
+    width: 251px;
     color: #FFF;
     text-transform: uppercase;
-    margin-right: 2px;
-    position: absolute;
-    bottom: 0;
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 25px;
+    border: none;
+    margin-top: 10px;
 }
 
 
@@ -620,6 +683,7 @@ input[type="submit"] {
     float: left;
     margin-top: 19px;
     color: #A1A1A1;
+    font-weight: 500;
 }
 
 
@@ -631,12 +695,20 @@ input[type="submit"] {
     font-size: 14px;
     letter-spacing: 1px;
     color: #A1A1A1;
+    font-weight: 600;
 }
 
 
 .logo-footer span {
     font-weight: bold;
 }
+
+
+.logo-footer a {
+    text-decoration: none;
+    color: #A1A1A1;
+}
+
 
 .social-buttons {
     float: right;
