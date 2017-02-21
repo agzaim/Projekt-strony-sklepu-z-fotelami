@@ -517,22 +517,21 @@ h2 {
 }
 
 
-.price-text {
+.price-numbers {
     padding-top: 7px;
     padding-left: 7px;
+    font-weight: bold;
 }
 
 
 .zlote {
     font-size: 31px;
-    font-weight: bold;
 }
 
 
 .grosze {
     font-size: 10px;
     vertical-align: 17px;
-    font-weight: bold;
 }
 
 
