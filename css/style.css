@@ -53,6 +53,11 @@ html {
 }
 
 
+
+/*          HEADER           */
+
+
+
 header {
     background-color: black;
     color: white;
@@ -63,7 +68,6 @@ header {
 .container {
     margin: 0 auto;
     width: 800px;
-    border: 1px solid red;
 }
 
 
@@ -75,8 +79,8 @@ header {
 .logo-header {
     float: left;
     text-transform: uppercase; 
-    font-size: 9px;
-    padding-top: 5px;
+    font-size: 10px;
+    padding-top: 3px;
     letter-spacing: 1px;
     font-weight: 500;
 }
@@ -90,7 +94,7 @@ header {
 
 .logo-header a span {
     font-weight: 900;
-    color: #24ba9f;
+     color: #24ba9f;
 }
 
 
@@ -104,7 +108,7 @@ li {
     display: inline;
     text-transform: uppercase;  
     font-weight: 600;
-    font-size: 9px;
+    font-size: 10px;
     padding-left: 32px;
     letter-spacing: 1px;
 }
@@ -115,14 +119,73 @@ li a {
     color: #FFF;
 }
 
+/* aby bezpiecznie rozwinąć listę: */
+
+#dropdown-initiator {
+    padding-bottom: 13px;
+}
+
+
+.dropdown {
+    position: relative;
+}
+
+
+.dropdown-triangle {
+    display: none;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #000000;
+    position: absolute;
+    top: 19px;
+    left: 48px;
+}
+
+
+.dropdown:hover .dropdown-triangle {
+    display: block;
+    z-index: 100;
+}
+
+
+.dropdown-elements {
+    display: none; 
+    color: #FFF;
+    background-color: #000000;
+    position: absolute;
+    top: 26px;
+    left: 14px;   
+    text-transform: none;
+    height: 67px;
+    width: 81px;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 200%;
+    padding-left: 10px;
+    padding-top: 6px;
+}
+
+
+.dropdown:hover .dropdown-elements,  .dropdown-elements:hover {
+    display: block; 
+    z-index: 100;
+}
+
 
 .clearfix {
     clear: both;
 }
 
 
+
+/*           SECTION 1           */
+
+
+
 .section1 {
-    background-image:  linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(209,208,216,1) 100%);
+    background-image:  linear-gradient(to bottom, rgba(252,252,252,1) 0%, rgba(252,252,252,1) 0%, rgba(246,246,246,1) 47%, rgba(209,208,216,1) 100%);
     height: 400px;
 }
 
@@ -154,6 +217,7 @@ li a {
 
 .slider-arrow:hover {
     color: #69e2cc;
+    cursor: pointer;
 }
 
 
@@ -201,7 +265,6 @@ h1 span {
     color: #555555;
     font-weight: 600;
     word-spacing: 1px;
-    
 }
 
 
@@ -219,6 +282,9 @@ h1 span {
 }
 
 
+/* poszerzam padding <a>, aby kliknięcie w każdym miejscu guzika przeniosło nas do linka */
+
+
 .button a {
     text-decoration: none;
     color: white;
@@ -228,20 +294,22 @@ h1 span {
 
 
 .button:hover {
-   box-shadow: 5px 5px 5px #b3b3b3;
+    opacity: 0.6;
 }
 
 
 .button:active {
-    background-color: #69e2cc;
+    box-shadow: 5px 5px 5px #929292;
 }
+
 
 
 /*          SECTION 2          */
 
 
+
 .section2 {
-    height: 267px;
+    height: 268px;
     position: relative;
 }
 
@@ -287,7 +355,7 @@ h1 span {
     height: 50px;
     width: 100%;
     position: absolute;
-    bottom: 14px;
+    bottom: 12px;
     background-color: rgba(255, 255, 255, .5);
     padding-left: 12px;
 }
@@ -308,15 +376,16 @@ h1 span {
 
 
 .box3 .opacity-bar {
-    top: 14px;
+    top: 11px;
+    width: 70%;
 }
 
 
 .box3 article {
     color: #7F7F7F;
     padding-left: 15px;
-    padding-right: 10px;
-    font-size: 11px;
+    padding-right: 17px;
+    font-size: 10px;
     margin-top: 60px;
     line-height: 150%;
     font-weight: 500;
@@ -335,7 +404,7 @@ h1 span {
 
 h2 {
     font-weight: 600;
-    font-size: 18px;
+    font-size: 17px;
     text-transform: uppercase; 
     margin-top: 26px;
     color: #555555;
@@ -377,12 +446,12 @@ h2 {
 
 
 .ring {
-    height: 40px;
-    width: 40px;
+    height: 39px;
+    width: 39px;
     border-radius: 50%;
     position: absolute;
     border: 2px solid #d6d5dc;
-    left: 101px;
+    left: 102px;
     top: -29px;
     background-color: #FFF;
     z-index: 2;
@@ -401,7 +470,7 @@ h2 {
     border-radius: 50%;
     position: absolute;
     left: 10px;
-    top: 11px;
+    top: 10px;
     background-color: #C2C2C2;
     z-index: 3;  
 }
@@ -413,11 +482,12 @@ h2 {
 
 
 .plan-name {
-    text-transform: uppercase;
+   text-transform: uppercase;
     color: #27c7ab;
-    font-size: 18px;
-    margin-top: 30px;
-    font-weight: 600;
+    font-size: 19px;
+    margin-top: 24px;
+    font-weight: 500;
+    letter-spacing: -1px;
 }
 
 
@@ -430,7 +500,7 @@ h2 {
     height: 90px;
     border: 2px solid #d6d5dc;
     border-radius: 50%;
-    margin: 23px auto;
+    margin: 20px auto;
     background-color: #FFF;
     color: #C6C6C6;
 }
@@ -520,8 +590,6 @@ h2 {
     color: #27c7ab;
 }
 
-/* poszerzam padding <a>, aby kliknięcie w każdym miejscu guzika przeniosło nas do linka */
-
 
 .button-plan-box a {
     padding: 6px 21px;
@@ -529,43 +597,51 @@ h2 {
 
 
 .button-plan-box:hover {
-    box-shadow: 3px 3px 3px #b3b3b3;
+    opacity: 0.6;
+    cursor: pointer;
 }
 
 
 .button-plan-box:active {
-    background-color: #69e2cc;
+    box-shadow: 3px 3px 3px #b3b3b3;
 }
 
 
 .aquamarin-box .button-plan-box:hover {
-    box-shadow: 3px 3px 3px #a9efe2;
+    background-color: #e6e6e6;
+    opacity: 1;
+    cursor: pointer;
 }
 
 
 .aquamarin-box .button-plan-box:active {
-    background-color: #e6e6e6;
+    box-shadow: 3px 3px 3px #a9efe2;
 }
+
 
 
 /*         FORM  SECTION          */
 
+
+
+.form {
+    padding-bottom: 60px;
+}
+
 .form .long-color-bar {
-    margin-bottom: 19px;
+    margin-bottom: 17px;
 }
 
 
 .form-left {
     width: 507px;
     float: left;
-    
 }
 
 
 .form-right {
     float: right;
-    
-    width: 251px;
+    width: 263px;
 }
 
 
@@ -605,15 +681,6 @@ textarea {
     padding-top: 9px;
 }
 
-/*
- input[type="checkbox"]:checked {
-    background-image: url(../images/form_ok.jpg);
-    height: 30px;
-    width: 30px;
-    background-size: cover;
-    border: 1px solid #6ae2ce;
-}
-*/
 
 input[type="checkbox"] {
     display: none;
@@ -646,6 +713,7 @@ input[type="checkbox"]:checked + label {
     font-size: 15px;
     color: #bfbfbf;
     line-height: 100%;
+    margin-left: 4px;
 }
 
 
@@ -655,7 +723,7 @@ input[type="checkbox"]:checked + label {
     background-image: url(../images/red_chair.png);
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 0px 0px 19px 10px;
+    margin: 0px 0px 19px 15px;
 }  
 
 
@@ -671,6 +739,18 @@ input[type="submit"] {
     font-size: 25px;
     border: none;
     margin-top: 10px;
+    margin-left: 2px;
+}
+
+
+input[type="submit"]:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+
+input[type="submit"]:active {
+    box-shadow: 4px 4px 4px #929292;
 }
 
 
@@ -681,17 +761,18 @@ input[type="submit"] {
 
 .copyrights {
     float: left;
-    margin-top: 19px;
+    margin-top: 15px;
     color: #A1A1A1;
     font-weight: 500;
+    word-spacing: 1px;
 }
 
 
 .logo-footer {
     float: right;
-    margin-top: 16px;
+    margin-top: 10px;
     text-transform: uppercase;
-    margin-left: 43px;
+    margin-left: 46px;
     font-size: 14px;
     letter-spacing: 1px;
     color: #A1A1A1;
