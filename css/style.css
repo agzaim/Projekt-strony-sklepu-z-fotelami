@@ -321,7 +321,7 @@ h1 span {
     display: inline-block;
     position: absolute;
     top: 21px;
-    border: 1px solid #d1d0d8;
+    border: 1px solid #d6d5dc;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -343,7 +343,7 @@ h1 span {
 .box3 {
     width: 258px;
     height: 196px;
-    border: 1px solid #d1d0d8;
+    border: 1px solid #d6d5dc;
     display: inline-block;
     position: absolute;
     right: 0;
@@ -399,6 +399,11 @@ h1 span {
 
 .section3 {
     background-color: #F1F1F1; 
+}
+
+
+.section3 .container {
+        padding-top: 1px;
 }
 
 
@@ -636,6 +641,7 @@ h2 {
 .form-left {
     width: 507px;
     float: left;
+    padding-top: 10px;
 }
 
 
@@ -648,7 +654,7 @@ h2 {
 .form-left input {
     display: block;
     border: 1px solid #6ae2ce;
-    height: 44px;
+    height: 43px;
     width: 484px;
     margin-bottom: 19px;
     font-size: 22px;
@@ -718,7 +724,7 @@ input[type="checkbox"]:checked + label {
 
 
 .red-armchair {
-    height: 154px;
+    height: 162px;
     width: 197px;
     background-image: url(../images/red_chair.png);
     background-size: cover;
